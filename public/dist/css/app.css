@@ -1,0 +1,446 @@
+/* trang login */
+body.login-page {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    background-size: cover;
+}
+
+.login-box {
+    width: 40%;
+    padding: 20px;
+}
+
+.login-logo h2 {
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.login-card-body {
+    padding: 30px;
+}
+
+.login-box-msg {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.input-group .form-control {
+    height: 45px;
+    box-shadow: none;
+}
+
+.input-group-text {
+    background-color: #f4f6f9;
+    border: 1px solid #ced4da;
+    border-radius: 0;
+    color: #495057;
+}
+
+.input-group label {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #4a90e2;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #357abd;
+}
+
+.social-auth-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-auth-links a.btn-success {
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #28a745;
+    border: none;
+    padding: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.social-auth-links a.btn-success:hover {
+    background-color: #218838;
+}
+
+.toast-top-center {
+    top: 20px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+/* trang dashboard */
+.content-wrapper {
+    background: linear-gradient(to right, rgba(106, 17, 203, 0.7), rgba(37, 117, 252, 0.7));
+}
+.container-fluid h2 {
+    margin: 20px;
+}
+.info-box {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    animation: pulse 0.5s infinite alternate;
+}
+
+.info-box-icon {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.info-box-icon.bg-info {
+    background-color: #17a2b8;
+}
+.info-box-icon.bg-danger {
+    background-color: #dc3545;
+}
+.info-box-icon.bg-success {
+    background-color: #28a745;
+}
+.info-box-icon.bg-warning {
+    background-color: #ffc107;
+}
+
+.info-box-content {
+    margin-left: 10px;
+}
+
+.info-box-text {
+    font-weight: bold;
+}
+
+.info-box-number {
+    font-size: 1.2em;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+/* header */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+.navbar-nav .nav-item .nav-link {
+    color: #343a40;
+    transition:
+        background-color 0.3s,
+        color 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #dee9f3;
+    color: #007bff;
+    border-radius: 5px;
+}
+
+.navbar-nav.ml-auto .nav-item .nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav.ml-auto .nav-item .nav-link i {
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav .nav-item {
+        text-align: center;
+    }
+}
+
+/* footer */
+.main-footer {
+    color: #343a40;
+}
+
+/* Sidebar */
+.main-sidebar {
+    background-color: #343a40;
+    color: #ffffff;
+    height: 100vh;
+}
+
+.brand-link {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #1e1e2f;
+}
+
+.brand-image {
+    margin-right: 10px;
+}
+
+.brand-text {
+    font-size: 1.2em;
+}
+
+.sidebar {
+    padding: 15px 0;
+}
+
+.nav-sidebar .nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: #ffffff;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-link.active {
+    background-color: #007bff;
+}
+
+.nav-link:hover {
+    background-color: #0069d9;
+}
+
+.nav-icon {
+    margin-right: 10px;
+}
+
+.has-treeview .nav-treeview {
+    display: none;
+}
+
+.has-treeview.menu-open .nav-treeview {
+    display: block;
+}
+
+.nav-treeview .nav-item {
+    padding-left: 20px;
+}
+
+.nav-treeview .nav-link {
+    color: #b8c7ce;
+}
+
+.nav-treeview .nav-link.active {
+    background-color: #007bff !important;
+    color: #ffffff !important;
+}
+
+.nav-treeview .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Content */
+.btn-outline-primary {
+    background-color: #ffffff;
+    padding: 10px 20px;
+}
+
+input.search {
+    padding: 10px;
+}
+
+/* Thông báo trễ hẹn */
+.dropdown-item {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-divider {
+    border-top: 1px solid #5c9ee0;
+}
+
+/* luận văn */
+.import-file{
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+input[type="file"]{
+    margin-right: 10px;
+}
+
+/* Guest */
+.navbar {
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.navbar:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand h3 {
+    transition: color 0.3s;
+}
+
+.navbar-brand:hover h3 {
+    color: #007bff;
+}
+
+.nav-link {
+    transition: color 0.3s, transform 0.2s;
+}
+
+.nav-link:hover {
+    color: #0056b3;
+    transform: scale(1.05);
+}
+
+.table thead th {
+    background-color: #007bff;
+    color: white;
+}
+
+.table tbody tr {
+    transition: background-color 0.3s;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table tbody tr td {
+    padding: 10px;
+}
+
+.text-center {
+    font-weight: 700;
+    color: #002d55;
+    font-style: italic;
+}
+
+button.close {
+    font-size: 28px;
+}
+
+button.close:focus, .dropdown-item:focus {
+    outline: none;
+}
+
+/* Modal trễ hạn */
+/* Tùy chỉnh bảng cơ bản */
+.table {
+    margin-bottom: 0;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header bảng */
+.table thead th {
+    background-color:  #007bff;
+}
+
+/* Body bảng */
+.table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.table tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #f1f1f1;
+}
+
+/* Hover effect */
+.table tbody tr:hover {
+    background-color: #e0f7fa;
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cell padding và căn chỉnh */
+.table th, 
+.table td {
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Hiệu ứng khi hover vào từng ô */
+.table td:hover {
+    background-color: #d1ecf1;
+    color: #0056b3;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Responsive bảng */
+@media (max-width: 576px) {
+    .table {
+        font-size: 0.9rem;
+    }
+}
